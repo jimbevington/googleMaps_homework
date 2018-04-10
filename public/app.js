@@ -7,8 +7,9 @@ const initalize = function(){
   const map = new MapWrapper(container, startCenter, startZoom);
 
   // be able to create new Marker
-  // const testCoords = {lat: 35.1709827, lng: -5.3059999};
-  // map.addMarker(testCoords);
+  const stalinWorld = {lat: 54.022091, lng: 24.079799};
+  map.addMarker(stalinWorld);
+  map.addInfoWindow()
   // to put new markers when clicked
   map.addClickEvent();
 }

@@ -29,3 +29,9 @@ MapWrapper.prototype.addClickEvent = function () {
     this.addMarker(coords);
   }.bind(this));
 };
+
+MapWrapper.prototype.addInfoWindow = function (content) {
+  const info = new google.maps.InfoWindow({
+    content: content
+  });
+};
