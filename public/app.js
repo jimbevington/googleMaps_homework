@@ -16,10 +16,8 @@ const initalize = function(){
 
   map.addInfoToMarker(stalinWorldMarker, stalinWorldInfo);
 
-
   // to put new markers when clicked
   map.addClickEvent();
 }
-
 
 window.addEventListener("DOMContentLoaded", initalize);
