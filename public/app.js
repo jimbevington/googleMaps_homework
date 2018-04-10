@@ -6,10 +6,17 @@ const initalize = function(){
 
   const map = new MapWrapper(container, startCenter, startZoom);
 
-  // be able to create new Marker
+  // create Test Marker
   const stalinWorld = {lat: 54.022091, lng: 24.079799};
-  map.addMarker(stalinWorld);
-  map.addInfoWindow()
+  let stalinWorldMarker = map.addMarker(stalinWorld);
+
+  // create Info Window
+  const info = "Visit Stalin World!"
+  let stalinWorldInfo = map.addInfoWindow(info);
+
+  map.addInfoToMarker(stalinWorldMarker, stalinWorldInfo);
+
+
   // to put new markers when clicked
   map.addClickEvent();
 }
