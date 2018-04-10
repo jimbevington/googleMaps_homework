@@ -10,7 +10,7 @@ const initalize = function(){
   // const testCoords = {lat: 35.1709827, lng: -5.3059999};
   // map.addMarker(testCoords);
   // to put new markers when clicked
-
+  map.addClickEvent();
 }
 
 
