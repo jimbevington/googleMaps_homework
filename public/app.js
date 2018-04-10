@@ -6,6 +6,11 @@ const initalize = function(){
 
   const map = new MapWrapper(container, startCenter, startZoom);
 
+  // be able to create new Marker
+  const testCoords = {lat: 35.1709827, lng: -5.3059999};
+  map.addMarker(testCoords);
+  // to put new markers when clicked
+
 }
 
 
