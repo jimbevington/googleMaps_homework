@@ -18,6 +18,8 @@ const initalize = function(){
 
 
   // add Take Me To Ouagadougou button
+  const takeMeButton = document.getElementById('take-me-ouagadougou');
+  takeMeButton.addEventListener('click', map.takeMe.bind(map));
   // add Where Am I button
   // change Marker icon
   // style the shit out the map

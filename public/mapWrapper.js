@@ -41,5 +41,13 @@ MapWrapper.prototype.addClickEvent = function () {
   google.maps.event.addListener(this.googleMap, 'click', function(event){
     let coords = this.getCoords(event);
     this.addMarker(coords);
+    this.setCenter(coords);
   }.bind(this));
+};
+
+MapWrapper.prototype.takeMe = function () {
+  let ouagadougou = {lat: 12.3584562, lng: -1.6769299};
+  // debugger;
+  this.googleMap.setCenter(ouagadougou);
+  this.googleMap.setZoom(10);
 };
