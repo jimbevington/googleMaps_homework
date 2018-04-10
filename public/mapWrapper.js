@@ -46,6 +46,7 @@ MapWrapper.prototype.addClickEvent = function () {
   }.bind(this));
 };
 
+// pretty unnecessary - refactor to take out
 MapWrapper.prototype.takeMeOuagadougou = function () {
   let ouagadougou = {lat: 12.3584562, lng: -1.6769299};
   this.takeMe(ouagadougou);

@@ -19,10 +19,11 @@ const initalize = function(){
 
   // add Take Me To Ouagadougou button
   const takeMeButton = document.getElementById('take-me-ouagadougou');
+  //          Question ........ how do I put args in the below:
   takeMeButton.addEventListener('click', map.takeMeOuagadougou.bind(map));
   // add Where Am I button
   const whereAmI = document.getElementById('where-am-i');
-  // whereAmI.addEventListener('click', )
+  whereAmI.addEventListener('click', map.whereAmI.bind(map));
   // change Marker icon
   // style the shit out the map
 
