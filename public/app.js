@@ -16,6 +16,13 @@ const initalize = function(){
 
   map.addInfoToMarker(stalinWorldMarker, stalinWorldInfo);
 
+
+  // add Take Me To Ouagadougou button
+  // add Where Am I button
+  // change Marker icon
+  // style the shit out the map
+
+
   // to put new markers when clicked
   map.addClickEvent();
 }
