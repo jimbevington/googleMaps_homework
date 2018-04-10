@@ -19,8 +19,10 @@ const initalize = function(){
 
   // add Take Me To Ouagadougou button
   const takeMeButton = document.getElementById('take-me-ouagadougou');
-  takeMeButton.addEventListener('click', map.takeMe.bind(map));
+  takeMeButton.addEventListener('click', map.takeMeOuagadougou.bind(map));
   // add Where Am I button
+  const whereAmI = document.getElementById('where-am-i');
+  // whereAmI.addEventListener('click', )
   // change Marker icon
   // style the shit out the map
 

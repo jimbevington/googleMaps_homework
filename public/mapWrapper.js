@@ -42,12 +42,17 @@ MapWrapper.prototype.addClickEvent = function () {
     let coords = this.getCoords(event);
     this.addMarker(coords);
     this.setCenter(coords);
+    this.googleMap.setZoom(10);
   }.bind(this));
 };
 
-MapWrapper.prototype.takeMe = function () {
+MapWrapper.prototype.takeMeOuagadougou = function () {
   let ouagadougou = {lat: 12.3584562, lng: -1.6769299};
-  // debugger;
-  this.googleMap.setCenter(ouagadougou);
+  this.takeMe(ouagadougou);
+};
+
+
+MapWrapper.prototype.takeMe = function (coords) {
+  this.googleMap.setCenter(coords);
   this.googleMap.setZoom(10);
 };
