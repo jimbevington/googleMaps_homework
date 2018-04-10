@@ -57,3 +57,17 @@ MapWrapper.prototype.takeMe = function (coords) {
   this.googleMap.setCenter(coords);
   this.googleMap.setZoom(10);
 };
+
+MapWrapper.prototype.whereAmI = function () {
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        let pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+      this.takeMe(pos);
+    }.bind(this))
+  } else {
+    console.log("Location not found");
+  }
+}

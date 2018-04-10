@@ -11,11 +11,11 @@ const initalize = function(){
   let stalinWorldMarker = map.addMarker(stalinWorld);
 
   // create Info Window
+  // ...TO DO: add more tags etc to format InfoWindow
   const info = "Visit Stalin World!"
   let stalinWorldInfo = map.addInfoWindow(info);
 
   map.addInfoToMarker(stalinWorldMarker, stalinWorldInfo);
-
 
   // add Take Me To Ouagadougou button
   const takeMeButton = document.getElementById('take-me-ouagadougou');
@@ -24,9 +24,8 @@ const initalize = function(){
   // add Where Am I button
   const whereAmI = document.getElementById('where-am-i');
   whereAmI.addEventListener('click', map.whereAmI.bind(map));
-  // change Marker icon
-  // style the shit out the map
 
+  // ... TO DO: change Marker icon
 
   // to put new markers when clicked
   map.addClickEvent();
